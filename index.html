@@ -5,38 +5,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shegaw Nibret | Zen-AI-Lab</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        body { font-family: 'Inter', sans-serif; background-color: #fcfcfc; color: #333; }
-        .hero { padding: 80px 0; background: white; border-bottom: 1px solid #eee; text-align: center; }
-        .expertise-badge { margin: 4px; display: inline-block; padding: 6px 12px; background: #f0f2f5; border-radius: 8px; font-weight: 500; font-size: 0.85rem; border: 1px solid #e1e4e8; }
-        .section-title { font-weight: 700; border-left: 5px solid #1a73e8; padding-left: 15px; margin: 40px 0 25px; }
-        .achievement-card { background: white; border: 1px solid #eef0f2; border-radius: 12px; padding: 25px; margin-bottom: 20px; transition: 0.3s; }
-        .achievement-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); }
-        .year-tag { color: #1a73e8; font-weight: 600; font-size: 0.9rem; }
-        .footer { padding: 40px 0; text-align: center; color: #666; font-size: 0.9rem; }
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f8f9fa; color: #212529; }
+        .hero { padding: 100px 0 60px; background: white; border-bottom: 1px solid #eaeaea; text-align: center; }
+        .name-title { font-weight: 800; color: #000; letter-spacing: -1px; }
+        .amharic-sub { color: #6c757d; font-size: 1.2rem; margin-bottom: 20px; }
+        
+        .expertise-badge { 
+            margin: 5px; display: inline-block; padding: 8px 16px; 
+            background: #fff; border-radius: 50px; font-weight: 600; 
+            font-size: 0.85rem; border: 1px solid #dee2e6;
+            transition: all 0.3s ease; box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+        }
+        .expertise-badge:hover { background: #007bff; color: white; border-color: #007bff; transform: translateY(-2px); }
+        
+        .section-title { font-weight: 700; color: #000; margin: 50px 0 30px; position: relative; display: inline-block; }
+        .section-title::after { content: ''; display: block; width: 40px; height: 4px; background: #007bff; margin-top: 8px; border-radius: 2px; }
+        
+        .achievement-card { 
+            background: white; border: 1px solid #eef0f2; border-radius: 16px; 
+            padding: 30px; margin-bottom: 25px; transition: 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+            display: flex; align-items: flex-start;
+        }
+        .achievement-card:hover { transform: scale(1.02); box-shadow: 0 20px 40px rgba(0,0,0,0.05); border-color: #007bff; }
+        .icon-box { background: #e7f1ff; color: #007bff; padding: 15px; border-radius: 12px; margin-right: 20px; font-size: 1.5rem; }
+        
+        .year-label { font-weight: 700; color: #007bff; font-size: 1.1rem; margin-bottom: 5px; display: block; }
+        
+        .edu-card { background: #fff; padding: 25px; border-radius: 16px; border: 1px solid #eee; height: 100%; transition: 0.3s; }
+        .edu-card:hover { border-color: #007bff; }
+
+        .footer { padding: 60px 0; text-align: center; background: #fff; border-top: 1px solid #eee; margin-top: 80px; }
+        .btn-primary { border-radius: 50px; padding: 12px 30px; font-weight: 600; }
+        .btn-outline-dark { border-radius: 50px; padding: 12px 30px; font-weight: 600; }
     </style>
 </head>
 <body>
 
     <div class="hero">
         <div class="container">
-            <h1 class="display-5 fw-bold">Shegaw Nibret Gelaw</h1>
-            <p class="text-muted">( የንብረት ልጅ - Nibret's Son )</p>
-            <p class="lead mx-auto" style="max-width: 700px;">
-                Computer Science Professional & AI Researcher specializing in <b>Deep Learning</b> and <b>NLP</b>. 
-                Focusing on developing analytical methods to solve practical problems. [cite: 62, 67, 68]
+            <h1 class="display-4 name-title">Shegaw Nibret Gelaw</h1>
+            <p class="amharic-sub">የንብረት ልጅ — Nibret's Son</p>
+            <p class="lead mx-auto text-secondary" style="max-width: 750px;">
+                <b>Computer Science Professional & AI Researcher</b> specializing in Deep Learning and NLP. 
+                Applying analytical methods and neural architectures to solve complex practical problems.
             </p>
             <div class="mt-4">
-                <a href="mailto:ze.nibret12@gmail.com" class="btn btn-primary px-4 py-2">Contact Me</a>
-                <a href="https://www.linkedin.com/in/shegaw-nibret-gelaw/" class="btn btn-outline-dark px-4 py-2 ms-2">LinkedIn</a>
+                <a href="mailto:ze.nibret12@gmail.com" class="btn btn-primary"><i class="fas fa-envelope me-2"></i> Contact Me</a>
+                <a href="https://www.linkedin.com/in/shegaw-nibret-gelaw/" class="btn btn-outline-dark ms-2"><i class="fab fa-linkedin me-2"></i> LinkedIn</a>
             </div>
         </div>
     </div>
 
-    <div class="container mb-5">
+    <div class="container">
         
-        <h3 class="section-title">Expertise & Skills</h3>
-        <div class="mb-4">
+        <div class="text-center">
+            <h3 class="section-title">Expertise & Skills</h3>
+        </div>
+        <div class="text-center mb-5">
             <span class="expertise-badge">Deep Learning</span>
             <span class="expertise-badge">Natural Language Processing</span>
             <span class="expertise-badge">Image Processing</span>
@@ -48,44 +75,53 @@
             <span class="expertise-badge">TensorFlow</span>
             <span class="expertise-badge">PyTorch</span>
             <span class="expertise-badge">Google Cloud</span>
-        </div> [cite: 77, 98, 122]
+        </div>
 
         <h3 class="section-title">Achievements & Recognition</h3>
         
         <div class="achievement-card">
-            <span class="year-tag">2023</span>
-            <h4>IEEE Publication: Software Risk Prediction</h4>
-            <p class="text-muted">Published research on ensemble machine learning for software risk prediction at the ICT4DA Conference. [cite: 147, 148]</p>
+            <div class="icon-box"><i class="fas fa-file-alt"></i></div>
+            <div>
+                <span class="year-label">2023</span>
+                <h4>IEEE Publication: Software Risk Prediction</h4>
+                <p class="text-muted mb-0">Published research on ensemble machine learning for software risk prediction at the International Conference on Information and Communication Technology for Development for Africa (ICT4DA).</p>
+            </div>
         </div>
 
         <div class="achievement-card">
-            <span class="year-tag">2022</span>
-            <h4>M.Sc. Thesis: Geez-English Machine Translation</h4>
-            <p class="text-muted">Developed an advanced Deep Learning translation system at the University of Gondar. [cite: 78]</p>
+            <div class="icon-box"><i class="fas fa-language"></i></div>
+            <div>
+                <span class="year-label">2022</span>
+                <h4>M.Sc. Thesis: Geez-English Machine Translation</h4>
+                <p class="text-muted mb-0">Developed a state-of-the-art Deep Learning translation system for the Geez language at the University of Gondar.</p>
+            </div>
         </div>
 
         <div class="achievement-card">
-            <span class="year-tag">2018</span>
-            <h4>Graduation with Distinction</h4>
-            <p class="text-muted">Awarded for a GPA of 3.87/4.00 in B.Sc. Computer Science from Debre Tabor University. [cite: 74, 166]</p>
+            <div class="icon-box"><i class="fas fa-award"></i></div>
+            <div>
+                <span class="year-label">2018</span>
+                <h4>Graduation with Distinction</h4>
+                <p class="text-muted mb-0">Achieved a CGPA of 3.87/4.00 in B.Sc. Computer Science from Debre Tabor University.</p>
+            </div>
         </div>
 
         <h3 class="section-title">Academic Qualifications</h3>
-        <div class="row">
-            <div class="col-md-6 mb-3">
-                <div class="p-3 border rounded">
-                    <p class="year-tag">2020 - 2022</p>
+        <div class="row g-4">
+            <div class="col-md-6">
+                <div class="edu-card">
+                    <span class="year-label">2020 - 2022</span>
                     <h5>M.Sc. in Computer Science</h5>
-                    <p class="mb-0">University of Gondar, Ethiopia</p>
-                    <small class="text-muted">Data Science, Machine Learning, NLP. [cite: 75, 76, 77]</small>
+                    <p class="text-primary fw-bold mb-1">University of Gondar, Ethiopia</p>
+                    <p class="text-muted small">Specialization: Data Science, Machine Learning, and Natural Language Processing (NLP).</p>
                 </div>
             </div>
-            <div class="col-md-6 mb-3">
-                <div class="p-3 border rounded">
-                    <p class="year-tag">2014 - 2018</p>
+            <div class="col-md-6">
+                <div class="edu-card">
+                    <span class="year-label">2014 - 2018</span>
                     <h5>B.Sc. in Computer Science</h5>
-                    <p class="mb-0">Debre Tabor University, Ethiopia</p>
-                    <small class="text-muted">Distinction Graduate (3.87/4.0). [cite: 70, 71, 74]</small>
+                    <p class="text-primary fw-bold mb-1">Debre Tabor University, Ethiopia</p>
+                    <p class="text-muted small">Distinction Graduate (3.87/4.0). Focused on Software Engineering and AI fundamentals.</p>
                 </div>
             </div>
         </div>
@@ -93,7 +129,10 @@
     </div>
 
     <div class="footer">
-        <p>© 2026 Zen-AI-Lab | Created by Shegaw Nibret Gelaw</p>
+        <div class="container">
+            <p class="mb-1">© 2026 <b>Zen-AI-Lab</b> | Designed for Research & Innovation</p>
+            <p class="small text-muted">Made with <i class="fas fa-heart text-danger"></i> by Shegaw Nibret Gelaw</p>
+        </div>
     </div>
 
 </body>
